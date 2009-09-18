@@ -1,0 +1,20 @@
+<% content_for :content do %>
+  <% form_for @new_user do |user| %>
+    <%= user.error_messages %>
+    <p>
+      <%= user.label :username %>
+      <%= user.text_field :username %>
+    </p>
+    <p>
+      <%= user.label :password %>
+      <%= user.password_field :password %>
+    </p>
+    <p>
+      <%= user.label :level %>
+      <%= user.select :level, ['admin', 'plebian'] %>
+    </p>
+    <p>
+      <%= user.submit 'Create' %>
+    </p>
+  <% end %>
+<% end %>

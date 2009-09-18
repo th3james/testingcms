@@ -1,0 +1,47 @@
+.title_bar {
+  font-size: 28px;
+  font-weight: bold;
+  background: #103B68;
+  color: white;
+  padding: 30px;
+  margin-bottom: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+
+.side_menu_div {
+  float:left;
+  width: 200px;
+}
+
+.main_content_div {
+  float:left;
+}
+
+.nav_menu_head {
+  background: #103B68;
+  padding: 5px 10px 6px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+  -moz-box-shadow: 0 1px 3px #999;
+  -webkit-box-shadow: 0 1px 3px #999;
+  text-shadow: 0 -1px 1px #103B68;
+  border-bottom: 1px solid #103B68;
+  position: relative;
+  cursor: pointer;
+  display:block;
+  padding:5px 4px;
+  width:95%;
+}
+
+.sub_menu_div {
+  padding:2px 8px;
+  width: 90%;
+  border-bottom: solid 1px #577499;
+}
+
+a.sub_menu {
+  color: #103B63;
+  text-decoration: none;
+}

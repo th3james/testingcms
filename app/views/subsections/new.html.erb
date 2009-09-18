@@ -1,0 +1,17 @@
+<% content_for :content do %>
+  <h1>New Subsection</h1>
+
+  <% form_for([@section, @subsection]) do |f| %>
+    <%= f.error_messages %>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.submit 'Create' %>
+    </p>
+  <% end %>
+
+  <%= link_to 'Back', sections_path %>
+  
+<% end %>

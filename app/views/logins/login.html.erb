@@ -1,0 +1,7 @@
+<% content_for :content do %>
+  <% form_tag :action => 'do_login' do %>
+    <p>Username: <%= text_field :user, :username %></p>
+    <p>Password: <%= password_field :user, :password %></p>
+    <%= submit_tag 'Login'%>
+  <% end %>
+<% end %>

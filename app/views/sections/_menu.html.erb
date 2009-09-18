@@ -1,0 +1,25 @@
+<div id="accordion">
+<%
+menu_head_count = 0;
+menu_active = 0;
+@all_sections.each do |section| 
+  if !@section.nil? && (section.name == @section.name)
+    menu_active = menu_head_count
+  end
+  menu_head_count += 1%>
+
+  <div class="nav_menu_head">
+    <%= section.name %>
+  </div>
+  <div>
+      <% section.subsections.all.each do |subsection| %>
+        <div class="sub_menu_div">
+          <%= link_to subsection.name.to_str, section_subsections_path(:section_id => section.id, :id => subsection.id), :class => 'sub_menu'%>
+        </div>
+      <% end %>
+  </div>
+<% end %>
+</div>
+<div id="menu_selected_index" style="display: none"><%= menu_active %></div>
+<br />
+<%= link_to "Edit Site Layout", sections_path  %>

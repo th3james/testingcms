@@ -1,0 +1,11 @@
+<% content_for :content do %>
+<h1>Department Listing</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+	</tr>
+	<%= render :partial => "department", :collection => @departments %>
+</table>
+
+<% end %>
