@@ -1,0 +1,419 @@
+Unable to load subpage, underlying cause no such file to load -- subpage 
+
+ /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:158:in `require'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:265:in `require_or_load'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:224:in `depend_on'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:136:in `require_dependency'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/fixtures.rb:865:in `each'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/fixtures.rb:848:in `fixtures'
+./test_helper.rb:35
+unit/login_test.rb:1:in `require'
+unit/login_test.rb:1
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-18 14:24:10) [POST]
+  Parameters: {"login"=>#<Login id: nil, username: "PostTest", password: "superpassword", level: nil, created_at: nil, updated_at: nil>}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-18 14:27:30) [POST]
+  Parameters: {"login"=>#<Login id: nil, username: "PostTest", password: "superpassword", level: nil, created_at: nil, updated_at: nil>}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-18 14:33:41) [POST]
+  Parameters: {"login"=>#<Login id: nil, username: "PostTest", password: "superpassword", level: nil, created_at: nil, updated_at: nil>}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-18 14:34:48) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Create (0.4ms)[0m   [0mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-18 13:34:57', '2009-09-18 13:34:57', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 8950ms (DB: 5) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-18 14:36:52) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Create (0.4ms)[0m   [0mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-18 13:37:01', '2009-09-18 13:37:01', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 9209ms (DB: 4) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-18 15:32:34) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.8ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 67182ms (DB: 5) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-18 15:33:41) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Create (0.4ms)[0m   [0mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-18 14:33:52', '2009-09-18 14:33:52', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 11376ms (DB: 1) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-18 15:34:15) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (1.1ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.7ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 1235ms (DB: 6) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-18 15:34:16) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;36;1mSection Load (1.0ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Create (0.4ms)[0m   [0mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-18 14:34:17', '2009-09-18 14:34:17', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 632ms (DB: 1) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 10:58:34) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (2.2ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.7ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 234966ms (DB: 7) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 11:02:29) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (1.2ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.7ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 2807ms (DB: 2) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#logout (for 0.0.0.0 at 2009-09-21 11:02:29) [POST]
+  [4;36;1mSection Load (0.9ms)[0m   [0;1mSELECT * FROM "sections" [0m
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-21 11:04:01) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;35;1mSection Load (0.8ms)[0m   [0mSELECT * FROM "sections" [0m
+  [4;36;1mLogin Create (0.4ms)[0m   [0;1mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-21 10:04:50', '2009-09-21 10:04:50', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 48448ms (DB: 1) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 11:06:12) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 13ms (DB: 7) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 11:06:12) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.9ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#logout (for 0.0.0.0 at 2009-09-21 11:06:12) [POST]
+  [4;36;1mSection Load (0.7ms)[0m   [0;1mSELECT * FROM "sections" [0m
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-21 11:07:07) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;35;1mSection Load (0.9ms)[0m   [0mSELECT * FROM "sections" [0m
+  [4;36;1mLogin Create (0.6ms)[0m   [0;1mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-21 10:07:07', '2009-09-21 10:07:07', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 11:07:30) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.9ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 12ms (DB: 5) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 11:07:30) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.7ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#logout (for 0.0.0.0 at 2009-09-21 11:07:30) [POST]
+  [4;36;1mSection Load (0.9ms)[0m   [0;1mSELECT * FROM "sections" [0m
+Redirected to http://test.host/
+Completed in 4071ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-21 11:07:34) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;35;1mSection Load (0.8ms)[0m   [0mSELECT * FROM "sections" [0m
+  [4;36;1mLogin Create (0.3ms)[0m   [0;1mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-21 10:07:35', '2009-09-21 10:07:35', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 9ms (DB: 1) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:11:58) [POST]
+  Parameters: {"user"=>{"username"=>"Fake", "password"=>"user"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.3ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'Fake' AND "logins"."password" = 'user') LIMIT 1[0m
+Redirected to http://test.host/logins/login
+Completed in 10ms (DB: 5) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=user&user%5Busername%5D=Fake]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:11:58) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (1.8ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 9ms (DB: 3) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:11:58) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#logout (for 0.0.0.0 at 2009-09-21 14:11:58) [POST]
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+Redirected to http://test.host/
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-21 14:11:58) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;35;1mSection Load (0.8ms)[0m   [0mSELECT * FROM "sections" [0m
+  [4;36;1mLogin Create (0.4ms)[0m   [0;1mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-21 13:11:58', '2009-09-21 13:11:58', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+  [4;35;1mSQL (3.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:12:15) [POST]
+  Parameters: {"user"=>{"username"=>"Fake", "password"=>"user"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'Fake' AND "logins"."password" = 'user') LIMIT 1[0m
+Redirected to http://test.host/logins/login
+Completed in 10ms (DB: 5) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=user&user%5Busername%5D=Fake]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:12:15) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.9ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:12:15) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#logout (for 0.0.0.0 at 2009-09-21 14:12:15) [POST]
+  [4;36;1mSection Load (0.7ms)[0m   [0;1mSELECT * FROM "sections" [0m
+Redirected to http://test.host/
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-21 14:12:15) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;35;1mSection Load (0.8ms)[0m   [0mSELECT * FROM "sections" [0m
+  [4;36;1mLogin Create (0.4ms)[0m   [0;1mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-21 13:12:15', '2009-09-21 13:12:15', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:12:49) [POST]
+  Parameters: {"user"=>{"username"=>"Fake", "password"=>"user"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'Fake' AND "logins"."password" = 'user') LIMIT 1[0m
+Redirected to http://test.host/logins/login
+Completed in 9ms (DB: 5) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=user&user%5Busername%5D=Fake]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:12:49) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.7ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 9ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:12:49) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.9ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#logout (for 0.0.0.0 at 2009-09-21 14:12:49) [POST]
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-21 14:12:49) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;35;1mSection Load (0.8ms)[0m   [0mSELECT * FROM "sections" [0m
+  [4;36;1mLogin Create (0.4ms)[0m   [0;1mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-21 13:12:49', '2009-09-21 13:12:49', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:21:59) [POST]
+  Parameters: {"user"=>{"username"=>"Fake", "password"=>"user"}}
+  [4;36;1mSection Load (0.9ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.2ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'Fake' AND "logins"."password" = 'user') LIMIT 1[0m
+Redirected to http://test.host/logins/%2Flogin
+Completed in 10ms (DB: 5) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=user&user%5Busername%5D=Fake]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:21:59) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.6ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:21:59) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.7ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#logout (for 0.0.0.0 at 2009-09-21 14:21:59) [POST]
+  [4;36;1mSection Load (0.8ms)[0m   [0;1mSELECT * FROM "sections" [0m
+Redirected to http://test.host/
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-21 14:21:59) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;35;1mSection Load (0.8ms)[0m   [0mSELECT * FROM "sections" [0m
+  [4;36;1mLogin Create (0.4ms)[0m   [0;1mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-21 13:21:59', '2009-09-21 13:21:59', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 10ms (DB: 1) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:25:39) [POST]
+  Parameters: {"user"=>{"username"=>"Fake", "password"=>"user"}}
+  [4;36;1mSection Load (1.2ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (0.4ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'Fake' AND "logins"."password" = 'user') LIMIT 1[0m
+Redirected to http://test.host/login
+Completed in 14ms (DB: 5) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=user&user%5Busername%5D=Fake]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:25:39) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (1.2ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (1.0ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 12ms (DB: 2) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#do_login (for 0.0.0.0 at 2009-09-21 14:25:39) [POST]
+  Parameters: {"user"=>{"username"=>"James", "password"=>"wcmc"}}
+  [4;36;1mSection Load (1.2ms)[0m   [0;1mSELECT * FROM "sections" [0m
+  [4;35;1mLogin Load (1.0ms)[0m   [0mSELECT * FROM "logins" WHERE ("logins"."username" = 'James' AND "logins"."password" = 'wcmc') LIMIT 1[0m
+Redirected to http://test.host/sections
+Completed in 7ms (DB: 2) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#logout (for 0.0.0.0 at 2009-09-21 14:25:39) [POST]
+  [4;36;1mSection Load (2.1ms)[0m   [0;1mSELECT * FROM "sections" [0m
+Redirected to http://test.host/
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/logins/do_login?user%5Bpassword%5D=wcmc&user%5Busername%5D=James]
+
+
+Processing LoginsController#create (for 0.0.0.0 at 2009-09-21 14:25:39) [POST]
+  Parameters: {"login"=>{"username"=>"PostTest", "password"=>"superpassword"}}
+  [4;35;1mSection Load (2.3ms)[0m   [0mSELECT * FROM "sections" [0m
+  [4;36;1mLogin Create (0.5ms)[0m   [0;1mINSERT INTO "logins" ("created_at", "updated_at", "username", "level", "password") VALUES('2009-09-21 13:25:39', '2009-09-21 13:25:39', 'PostTest', NULL, 'superpassword')[0m
+Redirected to http://test.host/logins
+Completed in 14ms (DB: 3) | 302 Found [http://test.host/logins?login%5Bpassword%5D=superpassword&login%5Busername%5D=PostTest]

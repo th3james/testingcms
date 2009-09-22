@@ -37,17 +37,24 @@ class LoginsController < ApplicationController
     password = params[:user][:password]
 
     if (username.nil? || password.nil?)
-      flash[:notice] = 'Unknown user or invalid password'
+      flash[:notice] = 'Please specify both your username and password'
       redirect_to :action => 'login'
-      
     else
       login = Login.find(:first, :conditions => { :username => username, :password => password })
       if !login.nil?
         session[:user_id] = username
         session[:level] = login.level
         redirect_to sections_path
+      elsif
+        flash[:notice] = 'Incorrect username or password'
+        redirect_to '/login'
       end
     end
+  end
+
+  def logout
+    session[:user_id] = nil
+    redirect_to '/'
   end
 
 end

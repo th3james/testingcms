@@ -1,3 +1,16 @@
+body {
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+.frame{
+  margin:auto;
+  position:relative;
+  text-align:left;
+  width: 980px;
+}
+
 .title_bar {
   font-size: 28px;
   font-weight: bold;
@@ -12,10 +25,17 @@
 .side_menu_div {
   float:left;
   width: 200px;
+  padding: 5px;
 }
 
-.main_content_div {
+.main_content_div { 
   float:left;
+  width: 750px;
+  padding: 5px;
+}
+
+.subsection_content{
+
 }
 
 .nav_menu_head {

@@ -20,21 +20,26 @@ class ApplicationController < ActionController::Base
   def secure?
     false
   end
-  
 
   private
-
     def find_all_sections
       @all_sections = Section.all
     end
 
-    def authorize(forceSecure=false)
-      debugger
-      if (secure? || forceSecure) && session[:user_id].nil?
+    def authorize(force_secure=false)
+      if (secure? || force_secure) && session[:user_id].nil?
         session["return_to"] = request.request_uri
         redirect_to :controller => "logins"
         return false
       end
+      return true
     end
+ 
+  def logged_in?
+    if (!session[:user_id].nil?)
+      return true
+    end
+    return false
+  end
 
 end

@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  username: MyString
-  password: MyText
-  level: MyText
+admin:
+  username: James
+  password: wcmc
+  level: admin
 
-two:
-  username: MyString
-  password: MyText
-  level: MyText
+plebian:
+  username: pleb
+  password: pleb
+  level: plebian

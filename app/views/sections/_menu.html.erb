@@ -14,7 +14,7 @@ menu_active = 0;
   <div>
       <% section.subsections.all.each do |subsection| %>
         <div class="sub_menu_div">
-          <%= link_to subsection.name.to_str, section_subsections_path(:section_id => section.id, :id => subsection.id), :class => 'sub_menu'%>
+          <%= link_to subsection.name.to_str, section_subsection_path(:section_id => section.id, :id => subsection.id), :class => 'sub_menu'%>
         </div>
       <% end %>
   </div>

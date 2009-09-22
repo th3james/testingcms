@@ -2,10 +2,11 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "subsections", :action => "show", :section_id => 1, :id =>1
   map.resources :sections, :has_many  => :subsections
   map.resources :departments
-	map.resources :logins
+  map.resources :logins
 
-	map.connect 'login', :controller => 'logins'
-	map.connect 'adduser', :controller => 'logins', :action => 'new'
+  map.connect 'login', :controller => 'logins'
+  map.connect 'logout', :controller => 'logins', :action => 'logout'
+  map.connect 'adduser', :controller => 'logins', :action => 'new'
 	
   # The priority is based upon order of creation: first created -> highest priority.
 

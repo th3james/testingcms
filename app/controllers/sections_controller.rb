@@ -1,15 +1,15 @@
 class SectionsController < ApplicationController
+
   # GET /sections
   # GET /sections.xml
   def index
-    if (!authorize(true))
-      return
-    end
-    @sections = Section.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @sections }
+    if (authorize(true))
+      @sections = Section.all
+      respond_to do |format|
+        format.html # index.html.erb
+        format.xml  { render :xml => @sections }
+      end
+      return false
     end
   end
 

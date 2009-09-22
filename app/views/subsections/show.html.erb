@@ -1,6 +1,11 @@
 <% content_for :content do %>
 
-  Subsection Name: <%= @subsection.name %>
-
-
+  <h3><%= @subsection.name %></h3>
+  <%  if @logged_in %>
+        <%= link_to 'Edit', edit_section_subsection_path(:section_id => @section, :id => @subsection) %>
+  <%  end%>
+  <div class="subsection_content">
+    <%= @subsection.content %>
+  </div>
+  
 <% end %>

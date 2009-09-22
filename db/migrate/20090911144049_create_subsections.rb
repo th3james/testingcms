@@ -3,7 +3,6 @@ class CreateSubsections < ActiveRecord::Migration
     create_table :subsections do |t|
       t.string :name
       t.references :section
-      t.text :content
 
       t.timestamps
     end
